@@ -17,7 +17,6 @@ const assignment = {};
 //   let total = 0;
 //   arrayOfNumbers.forEach((num)=> {
 //     total += num;
-//     // console.log(total)
 //   })
 //     return total;
 // }
@@ -33,15 +32,13 @@ const assignment = {};
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-  let evenNumbersArray = []
-  let total = 0;
+  let evenNumbersArray = [];
 
   for(num of arrayOfNumbers) {
     if(num % 2 === 0) {
       evenNumbersArray.push(num);
     }
   }
-
   return evenNumbersArray.length;
 }
 assignment.countEvenNumbers = countEvenNumbers;
